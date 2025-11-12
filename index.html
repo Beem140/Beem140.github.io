@@ -1,0 +1,163 @@
+<!--
+  Portfolio website for: ศิริโชติ เชื้อกลางใหญ่ (Beem)
+  File: index.html -- single-file static site for GitHub Pages
+
+  Quick deploy instructions:
+  1. Create a repository named: Beem140.github.io (replace with your GitHub username)
+  2. Add this index.html to the repository root and commit.
+  3. Push to GitHub. GitHub Pages will serve https://Beem140.github.io
+
+  You can edit texts, images, and links below. Images used in this file are hosted externally.
+-->
+
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ศิริโชติ "Beem" — Portfolio</title>
+  <meta name="description" content="Portfolio ของ ศิริโชติ (Beem) — นักศึกษา IT, สนใจ Web Development และ IT Support">
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+  <style>
+    /* Dark Blue Developer theme */
+    :root{
+      --bg:#0b1220; --card:#09121a; --accent:#00aaff; --muted:#9cc9ff; --glass: rgba(255,255,255,0.03);
+      --radius:16px; --maxw:1000px;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', 'Helvetica Neue', Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,#02050a 0%,var(--bg) 60%);color:#e8f8ff;line-height:1.6}
+    .container{max-width:var(--maxw);margin:36px auto;padding:28px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:var(--radius);padding:26px;margin-bottom:20px;box-shadow:0 6px 20px rgba(0,0,0,0.6);border:1px solid rgba(255,255,255,0.03)}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:140px;height:140px;border-radius:18px;flex:0 0 140px;overflow:hidden;border:2px solid rgba(0,170,255,0.12)}
+    .avatar img{width:100%;height:100%;object-fit:cover;display:block}
+    h1{margin:0;font-size:26px;color:var(--accent)}
+    h2{margin:8px 0 0 0;color:#d7f3ff}
+    p.lead{color:var(--muted);margin:8px 0 16px}
+    .badges{display:flex;gap:10px;flex-wrap:wrap}
+    .btn{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:8px 12px;border-radius:10px;text-decoration:none;color:var(--muted);font-weight:600}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:20px}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .skill{background:var(--glass);padding:8px 10px;border-radius:10px;color:var(--muted);font-weight:600}
+    table{width:100%;border-collapse:collapse;margin-top:10px}
+    td,th{padding:8px 10px;border-bottom:1px dashed rgba(255,255,255,0.03);text-align:left}
+    .projects .project{padding:12px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);margin-bottom:12px}
+    .hero-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .center{text-align:center}
+    footer{margin-top:18px;padding-top:12px;border-top:1px solid rgba(255,255,255,0.02);color:rgba(255,255,255,0.6);font-size:13px}
+    @media (max-width:900px){.grid{grid-template-columns:1fr;}.avatar{width:110px;height:110px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <header>
+        <div class="avatar">
+          <img src="https://drive.google.com/file/d/1H4kaq991W26E4dm39Sw4matHzrDSL6OU/view?usp=sharing" alt="Beem profile">
+        </div>
+        <div>
+          <h1>👋 สวัสดีครับ! ผม ศิริโชติ เชื้อกลางใหญ่ (Beem)</h1>
+          <p class="lead">นักศึกษาคณะวิทยาศาสตร์ สาขาเทคโนโลยีสารสนเทศ — ม.ราชภัฏอุดรธานี (ปีที่ 3) · สนใจ Web Development & IT Support</p>
+          <div class="hero-links">
+            <a class="btn" href="mailto:beem0929462062@gmail.com">📧 Email</a>
+            <a class="btn" href="https://github.com/Beem140" target="_blank">🐙 GitHub</a>
+            <a class="btn" href="https://www.facebook.com/BeemZ1" target="_blank">📘 Facebook</a>
+            <a class="btn" href="https://www.instagram.com/beemz_siri/" target="_blank">📸 Instagram</a>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <div class="grid">
+      <main>
+        <section class="card">
+          <h2>🚀 เป้าหมาย (Career Interest)</h2>
+          <p>มุ่งมั่นพัฒนาทักษะด้าน <strong>Front-End / Full Stack / Web Developer</strong> เพื่อสร้างเว็บไซต์ที่ใช้งานง่ายและตอบโจทย์ผู้ใช้จริง</p>
+
+          <h2 style="margin-top:16px">🧠 ทักษะ (Skills)</h2>
+          <div class="skills">
+            <div class="skill">Python</div>
+            <div class="skill">Java</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">ChatGPT / Gemini</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Git</div>
+            <div class="skill">VS Code</div>
+            <div class="skill">Figma</div>
+            <div class="skill">Photoshop</div>
+            <div class="skill">Premiere Pro</div>
+            <div class="projects">
+            <div class="project">
+              <strong>Soft Skills</strong>
+              <p style="margin:6px 0 0 0;color:var(--muted)">การสื่อสาร · การทำงานเป็นทีม · ความกระตือรือร้นในการเรียนรู้</p>
+            </div>
+          </div>
+
+          <h2 style="margin-top:16px">🏗️ ผลงาน (Projects)</h2>
+          <div class="projects">
+            <div class="project">
+              <strong>ระบบจองห้องพักอัจฉริยะ</strong>
+              <p style="margin:6px 0 0 0;color:var(--muted)">วิเคราะห์และออกแบบระบบเพื่อจัดการห้องพัก — ฟังก์ชันการจอง, จัดการสถานะห้อง, รายงาน</p>
+            </div>
+            <div class="project">
+              <strong>เว็บไซต์ขายสินค้า</strong>
+              <p style="margin:6px 0 0 0;color:var(--muted)">เว็บไซต์ขายสินค้าพื้นฐานสำหรับผู้เริ่มต้นพัฒนาเว็บ — หน้าแสดงสินค้า, ตะกร้า สั่งซื้อ</p>
+              <div style="margin-top:8px;text-align:center">
+                <img src="https://drive.google.com/file/d/1cntvodmULJIc_bwhhogLjL12G3WOnZGR/view?usp=sharing" alt="project screenshot" style="max-width:100%;border-radius:10px;box-shadow:0 8px 30px rgba(0,170,255,0.06);">
+              </div>
+            </div>
+          </div>
+
+          <h2 style="margin-top:16px">🎓 การศึกษา</h2>
+          <table>
+            <tr><th>สถาบัน</th><td>คณะวิทยาศาสตร์ สาขาเทคโนโลยีสารสนเทศ — มหาวิทยาลัยราชภัฏอุดรธานี (2566 – ปัจจุบัน)</td></tr>
+            <tr><th>จบจาก</th><td>โรงเรียนสังคมวิทยา</td></tr>
+          </table>
+
+          <h2 style="margin-top:16px">🏅 กิจกรรม (Activities)</h2>
+          <ul style="color:var(--muted)">
+            <li>สอนเด็กที่โรงเรียนเกี่ยวกับการใช้ AI — หาความรู้และสร้างเกม</li>
+          </ul>
+        </section>
+
+        <section class="card">
+          <h2>📫 ติดต่อ (Contact)</h2>
+          <p style="color:var(--muted)">Email: <a href="mailto:beem0929462062@gmail.com">beem0929462062@gmail.com</a></p>
+          <p style="color:var(--muted)">GitHub: <a href="https://github.com/Beem140" target="_blank">github.com/Beem140</a></p>
+          <p style="color:var(--muted)">จังหวัด: อุดรธานี, ประเทศไทย</p>
+        </section>
+
+      </main>
+
+      <aside>
+        <div class="card center">
+          <h2>About</h2>
+          <p style="color:var(--muted)"><i>Hello! I'm Sirichoot (Beem) — a 3rd-year IT student focused on building practical, user-friendly websites.</i></p>
+          <div style="margin-top:12px">
+            <img src="https://github-readme-stats.vercel.app/api?username=Beem140&show_icons=true&theme=tokyonight" alt="GitHub stats" style="width:100%;border-radius:10px;">
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Quick Links</h2>
+          <table>
+            <tr><th>Email</th><td><a href="mailto:beem0929462062@gmail.com">beem0929462062@gmail.com</a></td></tr>
+            <tr><th>GitHub</th><td><a href="https://github.com/Beem140" target="_blank">github.com/Beem140</a></td></tr>
+            <tr><th>Facebook</th><td><a href="https://www.facebook.com/BeemZ1" target="_blank">facebook.com/BeemZ1</a></td></tr>
+            <tr><th>Instagram</th><td><a href="https://www.instagram.com/beemz_siri/" target="_blank">@beemz_siri</a></td></tr>
+          </table>
+        </div>
+
+        <div class="card center">
+          <h2>Theme</h2>
+          <p style="color:var(--muted)">Dark Blue Developer • Clean • Responsive</p>
+        </div>
+      </aside>
+    </div>
+
+  </div>
+</body>
+</html>
